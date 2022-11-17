@@ -47,6 +47,7 @@ public class LoginDemoSteps_PF {
 
     @Then("^User is navigated to home page$")
     public void user_is_navigated_to_home_page() throws Throwable {
+        System.out.println("Hi I am from User is navigated to home page ");
        home = new HomePage_PF(driver);
         Assert.assertTrue(home.CheckLogoutIsDisplayed());
        driver.close();
