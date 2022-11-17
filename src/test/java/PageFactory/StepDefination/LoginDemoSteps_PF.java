@@ -40,7 +40,7 @@ public class LoginDemoSteps_PF {
     }
     @When("^User click on login$")
     public void user_click_on_login() {
-        System.out.println("Hi I ma from user_click_on_login");
+        System.out.println("Hi I am from user_click_on_login");
         login.ClickOnLogin();
 
     }
