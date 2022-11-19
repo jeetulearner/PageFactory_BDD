@@ -28,6 +28,7 @@ public class LoginDemoSteps_PF {
     }
     @Given("^User is in login page$")
     public void user_is_in_login_page()  {
+        System.out.println("Hi I am from the user_is_in_login_page");
         driver.navigate().to("https://example.testproject.io/web/");
     }
 
