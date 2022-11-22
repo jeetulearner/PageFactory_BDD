@@ -37,7 +37,7 @@ public class LoginDemoSteps_PF {
         login = new LoginPage_PF(driver);
         login.EnterUsername(username);
         login.EnterPassword(password);
-        System.out.println("User is on login page");
+        System.out.printlnn("User is on login page");
     }
     @When("^User click on login$")
     public void user_click_on_login() {
