@@ -18,8 +18,8 @@ public class LoginDemoSteps_PF {
     HomePage_PF  home;
     @Given("^Browser is open$")
     public void browser_is_open(){
-        System.out.printlnn("I am from the login step");
-        System.out.printlnn("Inside the step browser is open");
+        System.out.println("I am from the login step");
+        System.out.println("Inside the step browser is open");
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
@@ -28,7 +28,7 @@ public class LoginDemoSteps_PF {
     }
     @Given("^User is in login page$")
     public void user_is_in_login_page()  {
-        System.out.printlnn("Hi I am from the user_is_in_login_page");
+        System.out.println("Hi I am from the user_is_in_login_page");
         driver.navigate().to("https://example.testproject.io/web/");
     }
 
@@ -37,7 +37,7 @@ public class LoginDemoSteps_PF {
         login = new LoginPage_PF(driver);
         login.EnterUsername(username);
         login.EnterPassword(password);
-        System.out.printlnn("User is on login page");
+        System.out.println("User is on login page");
     }
     @When("^User click on login$")
     public void user_click_on_login() {
