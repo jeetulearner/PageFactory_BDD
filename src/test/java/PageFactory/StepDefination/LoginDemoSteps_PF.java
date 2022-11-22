@@ -18,7 +18,7 @@ public class LoginDemoSteps_PF {
     HomePage_PF  home;
     @Given("^Browser is open$")
     public void browser_is_open(){
-        System.out.println("I am from the login step");
+        System.out.printlnn("I am from the login step");
         System.out.printlnn("Inside the step browser is open");
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
